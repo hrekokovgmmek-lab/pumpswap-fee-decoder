@@ -1,0 +1,28 @@
+{
+  "name": "pumpswap-fee-decoder",
+  "version": "1.0.0",
+  "description": "Where the money in a PumpSwap trade goes: LP, protocol and creator fees from the program's own events, network and priority fees, tips, hidden bot fees and rent. Read-only.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Artem Vartanov",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "explain": "node --env-file-if-exists=.env --import tsx src/main.ts explain",
+    "pool": "node --env-file-if-exists=.env --import tsx src/main.ts pool",
+    "idl": "node --env-file-if-exists=.env --import tsx scripts/fetch-idl.ts",
+    "fixture": "node --env-file-if-exists=.env --import tsx scripts/fetch-tx.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "tiers": "node --env-file-if-exists=.env --import tsx src/main.ts tiers"
+  },
+  "dependencies": {
+    "@solana/web3.js": "1.98.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3"
+  }
+}
