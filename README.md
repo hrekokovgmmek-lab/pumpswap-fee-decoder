@@ -1,8 +1,12 @@
 # pumpswap-fee-decoder
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white) ![Node](https://img.shields.io/badge/node-%E2%89%A522.9-339933?logo=node.js&logoColor=white) ![Solana](https://img.shields.io/badge/Solana-mainnet-9945FF?logo=solana&logoColor=white) ![Read-only](https://img.shields.io/badge/read--only-no%20keys-2ea44f)
+
 Where the money in a PumpSwap trade actually goes: LP, protocol and creator fees straight from the program's own
 events, the buyback share, fees paid out now versus fees left in the pool, network and priority fees, Jito tips,
 transfers to other parties (often trading-bot fees) and refundable rent. Read-only.
+
+<p align="center"><img src="docs/demo.svg" alt="A real PumpSwap sell decoded: LP, protocol and creator fees, buyback, fees held in the pool, network and priority fees" width="760"></p>
 
 ## Sample output
 
